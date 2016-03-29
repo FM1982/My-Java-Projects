@@ -1,3 +1,8 @@
+/*
+ * MyCalc mainfiles/CloseListener
+ * Copyright MLuensmann
+ */
+
 package mainfiles;
 
 import java.awt.event.ActionEvent;

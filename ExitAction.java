@@ -1,3 +1,8 @@
+/*
+ * MyCalc mainfiles/ExitAction
+ * Copyright MLuensmann
+ */
+
 package mainfiles;
 
 import java.awt.Frame;

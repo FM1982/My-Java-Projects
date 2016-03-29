@@ -1,3 +1,8 @@
+/*
+ * MyCalc gui/InfoWindow 
+ * Copyright MLuensmann
+ */
+
 package gui;
 
 import java.awt.Component;
