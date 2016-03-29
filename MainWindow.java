@@ -1,3 +1,8 @@
+/*
+ * MyCalc gui/MainWindow 
+ * Copyright MLuensmann
+ */
+
 package gui;
 
 import logic.MyCalcLogic;

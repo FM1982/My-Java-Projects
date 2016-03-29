@@ -1,3 +1,8 @@
+/*
+ * MyCalc mainfiles/MyCalc
+ * Copyright MLuensmann
+ */
+
 package mainfiles;
 
 import gui.MainWindow;
