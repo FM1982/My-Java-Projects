@@ -22,10 +22,13 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Crack {
 	
+	//String for shutdown
 	private static String cLogOut = "shutdown -l";
 	
+	//starter process available in class level
 	private static Process cChild = null;
 	
+	//global long value for thread stopping
 	private static long cTimeToStopThreads = System.currentTimeMillis() / 1000;
 	
 	/*
@@ -33,16 +36,22 @@ public class Crack {
 	 * solange laufen bis die Abbruchbedingung, das heißt der Rechner sich abmeldet!
 	 */
 	
+	//long value for thread stopping of thread 1 available in class level
 	private static long cTimeToStopThreadCR1 = 120;
-	
+
+	//long value for thread stopping of thread 2 available in class level
 	private static long cTimeToStopThreadCR2 = 120;
 	
+	//long value for thread stopping of thread 3 available in class level
 	private static long cTimeToStopThreadCR3 = 120;
 	
+	//long value for thread stopping of thread 4 available in class level
 	private static long cTimeToStopThreadCR4 = 120;
 	
+	//long value for logout available in class level
 	private static long cTimeToLogOut = 120;//ThreadLocalRandom.current().nextLong(130);
 	
+	//boolean value to check for time to stop at class level
 	private static boolean cTimeToStop;
 	
 	//private static long cSystemTime = System.currentTimeMillis() / 1000;
@@ -70,6 +79,8 @@ public class Crack {
 	 * public int getRN(){ return
 	 * ThreadLocalRandom.current().nextInt(cIN.length); }
 	 */
+	
+	//First Thread
 
 	private static Runnable cR1 = new Runnable() {
 
@@ -109,6 +120,8 @@ public class Crack {
 			}
 		}
 	};
+	
+	//Second Thread
 
 	private static Runnable cR2 = new Runnable() {
 
@@ -158,6 +171,8 @@ public class Crack {
 		}
 			//System.out.println("My Second Thread started!");
 	};
+	
+	//Third Thread
 
 	private static Runnable cR3 = new Runnable() {
 
@@ -191,6 +206,8 @@ public class Crack {
 			}
 		}
 	};
+	
+	//Fourth Thread
 
 	private static Runnable cR4 = new Runnable() {
 
@@ -358,14 +375,20 @@ public class Crack {
 			}
 		}
 	};*/
+	
+	// getter for Process object at class level
 
 	public static Process getcChild() {
 		return cChild;
 	}
+	
+	//setter for Process object at class level
 
 	public static void setcChild(Process cChild) {
 		Crack.cChild = cChild;
 	}
+	
+	//main method
 
 	public static void main(String[] args) {
 		// System.out.println("Lets Test the Program!");
