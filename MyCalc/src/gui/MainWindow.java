@@ -578,7 +578,7 @@ public class MainWindow extends JFrame implements ActionListener, KeyListener {
 		mCInfoBar.add(mCInfoMenuItem);
 		mCMenu.add(mCInfoMenuItem);*/
 		
-		setUpContentPane(mCFrame.getContentPane());		
+		setUpContentPane(mCFrame.getContentPane());
 		mCFrame.setJMenuBar(mCMBar);
 				
 		mCFrame.pack();	

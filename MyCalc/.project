@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>MyCalc</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/images/new_corporate_design.png</name>
+			<type>1</type>
+			<location>D:/Job journey/Bewerbung_Beruf/Bewerbungsunterlagen/Corporate Design Entwürfe/new_corporate_design.png</location>
+		</link>
+	</linkedResources>
+</projectDescription>
