@@ -15,12 +15,16 @@ import java.awt.Container;
 import java.awt.GridBagLayout;
 //import java.awt.Graphics;
 
+//import java.awt.image.BufferedImage;
+//import java.io.IOException;
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-
 import java.util.Calendar;
 import java.util.Date;
 
+
+//import javax.imageio.ImageIO;
 //import javax.swing.Icon;
 import javax.swing.ImageIcon;
 //import javax.swing.JButton;
@@ -44,18 +48,21 @@ public class InfoWindow extends JDialog {
 	Date mCCD = Calendar.getInstance().getTime();
 	
 	private String mCRequestDate = mCDF.format(mCCD);
+
+	//java.net.URL imgURL = InfoWindow.class.getResource("src/images/new_corporate_design.png");
 	
 	//int y = getIconHeight();
 	//int x = getIconWidth();
 
-	//URL imageURL = MyCalc.class.getResource("MyCalc/images\new_corporate_design.png");
+	URL imageURL = InfoWindow.class.getResource("src/images/new_corporate_design.png");
 	
 	public InfoWindow(){
 		//super(parent);
-		/*if(imageURL != null){
+		if(imageURL != null){
 			ImageIcon mCIcon = new ImageIcon(imageURL);
+			//mCIcon.paintIcon(this.add(rootPane), mCIcon, 0, 0);
 		}
-		getRootPane().setDefaultButton(mCCloseButton);*/
+		/*getRootPane().setDefaultButton(mCCloseButton);*/
 		myCalcInfoWindow();
 	}		
 	
@@ -141,6 +148,9 @@ public class InfoWindow extends JDialog {
 	@Override
 	public void paintIcon(Component pMCInfoFrame, Graphics pMCImIcon, int pX, int pY) {
 		// TODO Auto-generated method stub
+		super.paint(pMCImIcon);
+		
+		pMCImIcon.
 	}*/
 
 }
